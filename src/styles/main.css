@@ -1,0 +1,110 @@
+/* ── Variables globales de color y fuente ── */
+:root {
+    --color-primary: #1D9E75;
+    --color-primary-dark: #0F6E56;
+    --color-background: #F1EFE8;
+    --color-surface: #FFFFFF;
+    --color-text-primary: #2C2C2A;
+    --color-text-secondary: #5F5E5A;
+    --color-border: #D3D1C7;
+    --color-danger: #E24B4A;
+    --border-radius: 10px;
+    --font: 'Segoe UI', sans-serif;
+}
+
+/* ── Reset básico ── */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font);
+    background: var(--color-background);
+    color: var(--color-text-primary);
+    padding: 2rem;
+}
+
+/* ── Título de página ── */
+.page-title {
+    font-size: 22px;
+    font-weight: 500;
+    margin-bottom: 1.5rem;
+    color: var(--color-text-primary);
+}
+
+/* ── Tarjeta de usuario ── */
+.user-card {
+    background: var(--color-surface);
+    border: 0.5px solid var(--color-border);
+    border-radius: var(--border-radius);
+    padding: 1rem 1.25rem;
+    margin-bottom: 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.user-card__header {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.user-card__initials {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background: #E1F5EE;
+    color: #0F6E56;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 500;
+    font-size: 14px;
+    flex-shrink: 0;
+}
+
+.user-card__name {
+    font-size: 15px;
+    font-weight: 500;
+    color: var(--color-text-primary);
+}
+
+.user-card__email {
+    font-size: 13px;
+    color: var(--color-text-secondary);
+    margin-top: 2px;
+}
+
+.user-card__footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 0.5px solid var(--color-border);
+    padding-top: 10px;
+}
+
+.user-card__role {
+    font-size: 12px;
+    font-weight: 500;
+    background: #E1F5EE;
+    color: #0F6E56;
+    padding: 4px 10px;
+    border-radius: 20px;
+}
+
+.user-card__btn {
+    font-size: 13px;
+    padding: 6px 12px;
+    border-radius: var(--border-radius);
+    border: 0.5px solid var(--color-danger);
+    background: transparent;
+    color: var(--color-danger);
+    cursor: pointer;
+}
+
+.user-card__btn:hover {
+    background: #FCEBEB;
+}
